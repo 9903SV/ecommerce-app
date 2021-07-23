@@ -7,7 +7,8 @@ import {
 import PropTypes from 'prop-types'
 import './SigninForm.css'
 
-export const SigninForm = ({errorMsg, usernameValue, passwordValue}) => {
+export const SigninForm = props => {
+  const {errorMsg, usernameValue, passwordValue} = props
   return (
     <div>
       <UsernameLabelInput

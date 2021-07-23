@@ -3,7 +3,8 @@
 import PropTypes from 'prop-types'
 import './LabelInput.css'
 
-export const LabelInput = ({title, placeholder, type, value}) => {
+export const LabelInput = props => {
+  const {title, placeholder, type, value} = props
   return (
     <div className="label-input-container">
       <label className="label">{title}</label>
