@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 import './button.css'
@@ -5,7 +7,8 @@ import './button.css'
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({primary, backgroundColor, size, label, ...props}) => { /* eslint-disable-line */
+export const Button = ({primary, backgroundColor, size, label, ...props}) => {
+  /* eslint-disable-line */
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'

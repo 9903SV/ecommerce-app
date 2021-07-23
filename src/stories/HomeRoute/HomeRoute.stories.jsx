@@ -1,10 +1,10 @@
 /* eslint-disable */
 
-import { HomeRoute } from "./HomeRoute";
+import {HomeRoute} from './HomeRoute'
 
 export default {
-    title: 'Home Route',
-    component: HomeRoute
+  title: 'Home Route',
+  component: HomeRoute,
 }
 
 const Template = () => <HomeRoute />

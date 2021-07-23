@@ -2,15 +2,34 @@
 import PropTypes from 'prop-types'
 import './Button.css'
 
-export const Button = ({text, backgroundColor, ...props}) => <button {...props} style={backgroundColor && {backgroundColor}} className={(['storybook-button', `storybook-button-${text.toLowerCase().replace(' ', '')}`].join(' '))} type="button">{text}</button>
+export const Button = props => {
+  const {text, backgroundColor, color, ...rest} = props
+  return (
+    <button
+      {...rest}
+      style={backgroundColor && {backgroundColor}}
+      style={color && {color}}
+      className={[
+        'storybook-button',
+        `storybook-button-${text.toLowerCase().replace(' ', '')}`,
+      ].join(' ')}
+      type="button"
+    >
+      {text}
+    </button>
+  )
+}
 
-Button.propTypes = {
-    backgroundColor: PropTypes.string,
-    onClick: PropTypes.func,
-    text: PropTypes.string.isRequired,
+Button.PropTypes = {
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
+  onClick: PropTypes.func,
+  text: PropTypes.string.isRequired,
 }
 
 Button.defaultProps = {
-    backgroundColor: null,
-    onClick: undefined,
-}  
+  backgroundColor: '#0967d2',
+  color: '#ffffff',
+  text: 'Button',
+  onClick: undefined,
+}

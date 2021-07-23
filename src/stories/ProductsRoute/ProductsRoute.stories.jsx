@@ -1,10 +1,10 @@
 /* eslint-disable */
 
-import { ProductsRoute } from "./ProductsRoute";
+import {ProductsRoute} from './ProductsRoute'
 
 export default {
-    title: 'Products Route',
-    component: ProductsRoute
+  title: 'Products Route',
+  component: ProductsRoute,
 }
 
 const Template = () => <ProductsRoute />

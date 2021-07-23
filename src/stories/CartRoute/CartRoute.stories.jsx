@@ -1,10 +1,10 @@
 /* eslint-disable */
 
-import { CartRoute } from "./CartRoute";
+import {CartRoute} from './CartRoute'
 
 export default {
-    title: 'Cart Route',
-    component: CartRoute
+  title: 'Cart Route',
+  component: CartRoute,
 }
 
 const Template = () => <CartRoute />

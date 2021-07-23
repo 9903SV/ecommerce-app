@@ -1,10 +1,14 @@
+/* eslint-disable */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
 import {Button} from './Button'
 import './header.css'
 
-export const Header = ({user, onLogin, onLogout, onCreateAccount}) => ( /* eslint-disable-line */
+export const Header = (
+  {user, onLogin, onLogout, onCreateAccount} /* eslint-disable-line */,
+) => (
   <header>
     <div className="wrapper">
       <div>
